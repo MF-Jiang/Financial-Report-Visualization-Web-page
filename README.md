@@ -1,1 +1,2 @@
 # Financial-Report-Visualization-Web-page
+This is a draft project I did during my internship in 2022. After I left, the project was officially approved. The company may only make a little reference to my version. My technique is not OK. My logic here is simple. I'm using a basic Flask framework to pull data from the backend database, draw it as a picture, and display it on the front end. All company information has been erased.
