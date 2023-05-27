@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<head>
+    <title>Visualization</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500%7CTeko:300,400,500%7CMaven+Pro:500">
+    -->
+
+    
+<!--
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">-->
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/fonts.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="section section-banner text-center d-none d-xl-block" style="background-image: url(../static/images/banner/banner-bg-02-1920x60.jpg); background-image: -webkit-image-set( url(../static/images/banner/banner-bg-02-1920x60.jpg) 1x, url(../static/images/banner/banner-bg-02-3840x120.jpg) 2x ) " target="_blank"><img src="../static/images/banner/test1top.png" srcset="../static/images/banner/test1top.png 1x, ../static/images/banner/test1top.png 2x" alt="" width="1600" height="310"></div>
+
+        <header class="section page-header">
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <!-- RD Navbar Panel-->
+                            <div class="rd-navbar-panel">
+                                <!-- RD Navbar Toggle-->
+                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <!-- RD Navbar Brand-->
+                                <div class="rd-navbar-brand"><a class="brand" href="testbase.html"><img src="../static/images/LOGOMAIN.png" alt="" width="229" height="43" /></a></div>
+                            </div>
+
+
+                            <div class="rd-navbar-main-element">
+                                <div class="rd-navbar-nav-wrap">
+                                    <div class="rd-navbar-search">
+                                        <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                                        <form class="rd-search" action="#" method="GET">
+                                            <div class="form-wrap">
+                                                <label class="form-label" for="rd-navbar-search-form-input">Search...</label>
+                                                <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off" />
+
+                                                <!--<select name="genre" class="form-select">
+                                                {% for genre in genres %}
+                                                <option value="{{ genre['Name']}}">{{ genre['Name'] }}</option>"
+                                                {% endfor %}
+                                            </select>-->
+
+                                            </div>
+                                            <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div>
+            <h3>财务概况</h3>
+            <br />
+        </div>
+        <section class="section section-sm section-fluid bg-default text-center">
+            <div class="container-fluid">
+                <h4 class="wow fadeInLeft">营业收入</h4>
+                <!--<p class="quote-jean wow fadeInRight" data-wow-delay=".1s">In our portfolio you can browse the latest interior designs created in various styles and for different purposes. Our qualified design professionals are always ready to design something spectacular for you, even if it’s a residential interior improvement.</p>
+            -->
+                <br />
+            </div>
+            <div>
+                <img src="data:image/png;base64, {{ plot_url }}" alt="" width="840" height="700" />
+
+            </div>
+        </section>
+
+        <section class="section section-sm section-first bg-default text-center">
+            <h4 class="wow fadeInLeft">主营构成</h4>
+            <div class="container">
+                <div class="row row-30 justify-content-center">
+                    <div "col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
+                        <div class>
+                            <img src="data:image/png;base64, {{ plot_url2 }}" alt="" width="420" height="350" />
+                        </div>
+                    </div>
+
+                    <div "col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
+                        <div class>
+                            <img src="data:image/png;base64, {{ plot_url3 }}" alt="" width="420" height="350" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-sm section-fluid bg-default text-center">
+            <div class="container-fluid">
+                <h4 class="wow fadeInLeft">归母净利润</h4>
+                <!--<p class="quote-jean wow fadeInRight" data-wow-delay=".1s">In our portfolio you can browse the latest interior designs created in various styles and for different purposes. Our qualified design professionals are always ready to design something spectacular for you, even if it’s a residential interior improvement.</p>
+            -->
+                <br />
+            </div>
+            <div>
+                <img src="data:image/png;base64, {{ plot_url4 }}" alt="" width="840" height="700" />
+
+            </div>
+        </section>
+
+        <section class="section section-sm section-first bg-default text-center">
+            <h4 class="wow fadeInLeft">每股指标</h4>
+            <div class="container">
+                <div class="row row-30 justify-content-center">
+                    <div "col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
+                        <div class>
+                            <img src="data:image/png;base64, {{ plot_url5 }}" alt="" width="420" height="350" />
+                        </div>
+                    </div>
+
+                    <div "col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
+                        <div class>
+                            <img src="data:image/png;base64, {{ plot_url6 }}" alt="" width="420" height="350" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-sm section-first bg-default text-center">
+            <div class="container">
+                <div class="row row-30 justify-content-center">
+                    <div "col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
+                        <div class>
+                            <img src="data:image/png;base64, {{ plot_url7 }}" alt="" width="420" height="350" />
+                        </div>
+                    </div>
+
+                    <div "col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
+                        <div class>
+                            <img src="data:image/png;base64, {{ plot_url8 }}" alt="" width="420" height="350" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-sm section-fluid bg-default text-center">
+            <div class="container-fluid">
+                <h4 class="wow fadeInLeft">财务比率</h4>
+                <!--<p class="quote-jean wow fadeInRight" data-wow-delay=".1s">In our portfolio you can browse the latest interior designs created in various styles and for different purposes. Our qualified design professionals are always ready to design something spectacular for you, even if it’s a residential interior improvement.</p>
+            -->
+                <br />
+            </div>
+            <div>
+                <img src="data:image/png;base64, {{ plot_url9 }}" alt="" width="420" height="350" />
+
+            </div>
+        </section>
+
+
+
+        <section class="section section-sm section-fluid bg-default text-center">
+            <h4 class="wow fadeInLeft">盈利能力</h4>
+            <div class="row row-30 isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
+                <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 3">
+                    <article class="thumbnail thumbnail-classic thumbnail-md">
+                        <div class="thumbnail-classic-figure">
+                            <img src="../static/images/fullwidth-gallery-1-420x350.jpg" alt="" width="420" height="350" />
+                            <img src="data:image/png;base64, {{ plot_url10 }}" alt="" width="420" height="350" />
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 2" data-wow-delay=".1s">
+                    <article class="thumbnail thumbnail-classic thumbnail-md">
+                        <div class="thumbnail-classic-figure">
+                            <img src="../static/images/fullwidth-gallery-2-420x350.jpg" alt="" width="420" height="350" />
+                            <img src="data:image/png;base64, {{ plot_url11 }}" alt="" width="420" height="350" />
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 1" data-wow-delay=".2s">
+                    <article class="thumbnail thumbnail-classic thumbnail-md">
+                        <div class="thumbnail-classic-figure">
+                            <img src="../static/images/fullwidth-gallery-3-420x350.jpg" alt="" width="420" height="350" />
+                            <img src="data:image/png;base64, {{ plot_url12 }}" alt="" width="420" height="350" />
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-sm section-first bg-default text-center">
+            <h4 class="wow fadeInLeft">偿还能力</h4>
+            <div class="container">
+                <div class="row row-30 justify-content-center">
+                    <div "col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
+                        <div class>
+                            <img src="data:image/png;base64, {{ plot_url13 }}" alt="" width="420" height="350" />
+                        </div>
+                    </div>
+
+                    <div "col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
+                        <div class>
+                            <img src="data:image/png;base64, {{ plot_url14 }}" alt="" width="420" height="350" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-sm section-first bg-default text-center">
+            <div class="container">
+                <div class="row row-30 justify-content-center">
+                    <div "col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
+                        <div class>
+                            <img src="data:image/png;base64, {{ plot_url5 }}" alt="" width="420" height="350" />
+                        </div>
+                    </div>
+
+                    <div "col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
+                        <div class>
+                            <img src="data:image/png;base64, {{ plot_url6 }}" alt="" width="420" height="350" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+    <script src="../static/js/core.min.js"></script>
+    <script src="../static/js/script.js"></script>
+
+</body>
+</html>
